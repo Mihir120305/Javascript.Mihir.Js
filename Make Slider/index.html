@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" width="500px" height="500px">
+</body>
+</html>
+<script>
+    let arr=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStDwzPvf6A4QEcHqzfcOPe7qACjHmIpMFhmg&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kcOtDKLOHA4tEliF7YWKRB9U0Q85Jjrukg&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwH3nTwDkuH0BzxJoAh3a69iPDrGY8Lcy_MA&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKS6QUYsi9a3Hmem_d9Wi4lCZ3dSDYL_8cfQ&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR89AgYviA_QgXZDR3yM-tjIwp4c9z3prE4Zg&s"]
+      let currentindex = 0;
+    setInterval(() => {
+        currentindex = (currentindex + 1) % arr.length;
+        document.querySelector("img").src = arr[currentindex];
+    }, 2000)
+</script>
